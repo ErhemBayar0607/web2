@@ -1,0 +1,31 @@
+body {
+    background-image: url(assets/zurag/chris-liverani-HUJDz6CJEaM-unsplash.jpg);
+    background-size: cover;
+  }
+  
+  .tses {
+    color: white;
+    text-decoration: none;
+  }
+  /* Тухайн класс дээр mouse очих үед ажиллана */
+  .tses:hover {
+    color: #edc126;
+  }
+  .tsesnuud {
+    display: flex;
+    justify-content: space-around;
+  }
+  .zuun-heseg {
+    flex: 1;
+  }
+  .baruun-heseg {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .container {
+    color: white;
+    margin-top: 30vh;
+    margin-left: 10vw;
+  }

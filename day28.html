@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [];
+      numbers.push(1, 2, 3);
+      console.log(numbers);
+
+      let fruits1 = ["apple", "banana"];
+      let fruits2 = ["orange"];
+      let fruits = fruits1.concat(fruits2);
+      console.log(fruits);
+
+      let name = ["nomin", "boldoo", "bataa"];
+      let name1 = name.indexOf("bataa");
+      console.log(name1);
+
+      let squere = (a) => {
+        let b = a * a;
+        return b;
+      };
+
+      const funktsiinNer = (too1, too2) => {
+        let niilber = too1 + too2;
+        return niilber;
+      };
+
+      console.log(funktsiinNer(10, 15));
+
+      console.log(squere(4));
+
+      let colors = ["red", "green", "blue"];
+      colors.pop();
+      console.log(colors);
+
+      let animals = ["dog", "cat", "elephant"];
+      let animals3 = animals.slice(2, 3);
+      console.log(animals3);
+
+      let number = [1, 2, 3, 4];
+      number.splice(0, 4);
+      console.log(number);
+
+      let jimsud = ["Алим", "гадил", "жүрж", "усан үзэм", "киви"];
+      let slicedFruits = jimsud.slice(1, 4);
+      console.log(slicedFruits);
+    </script>
+  </body>
+</html>

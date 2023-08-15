@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Guessing Game</title>
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./veb.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="hint-ref">
+        <div id="wordHint">
+          <span>Hint: </span> <span id="hint">Rise suddenly</span>
+        </div>
+      </div>
+      <div id="user-input-section">
+        <div id="displayWord"></div>
+
+        <div id="chanceCount">Chances Left: 5</div>
+      </div>
+      <div id="message"></div>
+      <div id="letter-container" class="">
+        <button class="letters" onclick="usegShalga('a')">A</button>
+        <button class="letters" onclick="usegShalga('b')">B</button>
+        <button class="letters" onclick="usegShalga('c')">C</button>
+        <button class="letters" onclick="usegShalga('d')">D</button>
+        <button class="letters" onclick="usegShalga('e')">E</button>
+        <button class="letters" onclick="usegShalga('f')">F</button>
+        <button class="letters" onclick="usegShalga('g')">G</button>
+        <button class="letters" onclick="usegShalga('h')">H</button>
+        <button class="letters" onclick="usegShalga('i')">I</button>
+        <button class="letters" onclick="usegShalga('j')">J</button>
+        <button class="letters" onclick="usegShalga('k')">K</button>
+        <button class="letters" onclick="usegShalga('l')">L</button>
+        <button class="letters" onclick="usegShalga('m')">M</button>
+        <button class="letters" onclick="usegShalga('n')">N</button>
+        <button class="letters" onclick="usegShalga('o')">O</button>
+        <button class="letters" onclick="usegShalga('p')">P</button>
+        <button class="letters" onclick="usegShalga('q')">Q</button>
+        <button class="letters" onclick="usegShalga('r')">R</button>
+        <button class="letters" onclick="usegShalga('s')">S</button>
+        <button class="letters" onclick="usegShalga('t')">T</button>
+        <button class="letters" onclick="usegShalga('u')">U</button>
+        <button class="letters" onclick="usegShalga('v')">V</button>
+        <button class="letters" onclick="usegShalga('w')">W</button>
+        <button class="letters" onclick="usegShalga('x')">X</button>
+        <button class="letters" onclick="usegShalga('y')">Y</button>
+        <button class="letters" onclick="usegShalga('z')">Z</button>
+      </div>
+    </div>
+    <!-- <div class="controls-container">
+      <div id="result"></div>
+      <div id="word"></div>
+      <button id="start">Start</button>
+    </div> -->
+    <!-- Script -->
+    <script src="app.js"></script>
+  </body>
+</html>

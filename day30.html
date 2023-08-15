@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./DASGAL.CSS" />
+    <link rel="stylesheet" href="./veb.css" />
+  </head>
+  <body>
+    <h1>Sansan too hed be?</h1>
+    <p>1-100-n xoorond baigaa moog tagaarai</p>
+    <div class="KO">
+      <input id="taasanToo" />
+      <button onclick="utgaAwahFunkts()">TAAX</button>
+
+      <h1 id="result"></h1>
+    </div>
+    <script>
+      const randomToo = Math.floor(Math.random() * 100) + 1;
+      function utgaAwahFunkts() {
+        const result = document.getElementById("result");
+        const taasanToo = document.getElementById("taasanToo").value;
+        if (taasanToo == randomToo) {
+          result.textContent = "HINT: Taachlaa";
+        } else if (taasanToo > randomToo) {
+          result.textContent = "HINT: Tanii too ih bna";
+        } else result.textContent = "HINT: Tanii too baga bna";
+      }
+    </script>
+  </body>
+</html>

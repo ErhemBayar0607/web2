@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="./7.css" />
+    <link rel="stylesheet" href="./veb.css" />
+  <body>
+      <div class="container">
+          <li><a class="S" href="index.html">home</a></li>
+          <li><a class="S" href="3.html">About me</a></li>
+          <li><a class="S" href="games.html">A game l made</a></li>
+        </div>
+    <body>
+      <div class="card">
+        <h1>Хайч, Чулуу, Даавуу</h1>
+        <p>Үйлдлээ сонгоно уу:</p>
+        <button onclick="play('Чулуу')">Чулуу</button>
+        <button onclick="play('Цаас')">Даавуу</button>
+        <button onclick="play('Хайч')">Хайч</button>
+        <p id="result"></p> 
+      </div>
+      <script>
+        function getComputerMove() {
+          const moves = ["Чулуу", "Цаас", "Хайч"];
+          const randomIndex = Math.floor(Math.random() * moves.length);
+          return moves[randomIndex];
+        }
+  
+        const play = (playerMove) => {
+          const computerMove = getComputerMove();
+          const resultElement = document.getElementById("result");
+          if (playerMove === computerMove) {
+            resultElement.textContent = "Тэнцлээ!";
+          } else if (
+            (playerMove === "Чулуу" && computerMove === "Хайч") ||
+            (playerMove === "Хайч" && computerMove === "Цаас") ||
+            (playerMove === "Цаас" && computerMove === "Чулуу")
+          ) {
+            resultElement.textContent =
+              "Та яллаа! Комьпютер=" + computerMove + " vs Та=" + playerMove;
+          } else {
+            resultElement.textContent =
+              "Компютер яллаа!  Комьпютер=" +
+              computerMove +
+              " vs Та=" +
+              playerMove;
+          }
+        }
+      </script>
+    </body>
+  </body>
+  <body>
+    <link rel="stylesheet" href="./DASGAL.CSS" /> 
+    <h1>Sansan too hed be?</h1>
+    <p>1-100-n xoorond baigaa moog tagaarai</p>
+    <div class="KO">
+      <input id="taasanToo" />
+      <button onclick="utgaAwahFunkts()">TAAX</button>
+
+      <h1 id="result"></h1>
+    </div>
+    <script>
+      const randomToo = Math.floor(Math.random() * 100) + 1;
+      function utgaAwahFunkts() {
+        const result = document.getElementById("result");
+        const taasanToo = document.getElementById("taasanToo").value;
+        if (taasanToo == randomToo) {
+          result.textContent = "HINT: Taachlaa";
+        } else if (taasanToo > randomToo) {
+          result.textContent = "HINT: Tanii too ih bna";
+        } else result.textContent = "HINT: Tanii too baga bna";
+      }
+    </script>
+  </body>
+</head>
+</html>
+
